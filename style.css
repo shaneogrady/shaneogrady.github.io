@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous|Montserrat");
+.header-text {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-family: "Righteous", cursive;
+  font-size: 4em;
+  letter-spacing: 0.5rem;
+
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*.heightmax {
+  min-height: 100vh;
+}*/
+
+.header {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow-x: visible;
+}
+
+.divider-img {
+  display: flex;
+  position: absolute;
+  display: flex;
+  height: 200px;
+  left: calc(50vw - 100px);
+  top: calc(100vh - 120px);
+}
+
+.box {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*margin-top: 20vh;*/
+}
+
+.colorful {
+  position: relative;
+  background: linear-gradient(to right, #0277bd, #43a047, #e5e, #ffea00);
+  background-size: 2000%;
+  animation: gradientBackground 10s alternate ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  position: relative;
+  display: block;
+  padding: 0 15%;
+}
+
+.content-text {
+  color: #444;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+}
+
+.content p {
+  text-align: left;
+  line-height: 1.3em;
+}
+.content p::first-letter {
+  font-size: 230%;
+}
+
+#div1 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
