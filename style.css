@@ -4,7 +4,7 @@
   text-align: center;
   display: block;
   font-family: "Righteous", cursive;
-  font-size: 50px;
+  font-size: 80px;
   letter-spacing: 0.5rem;
 }
 
@@ -47,7 +47,9 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   /*margin-top: 20vh;*/
 }
 
@@ -83,9 +85,9 @@ body {
   text-align: left;
   line-height: 1.3em;
 }
-.content p::first-letter {
+/*.content p::first-letter {
   font-size: 230%;
-}
+}*/
 
 /*#div1 {
   position: absolute;
@@ -102,15 +104,19 @@ body {
   }
 }
 
+span.gradient{
+  background: linear-gradient(to right, #0277bd, #43a047, #e5e, #ffea00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media(max-width:1200px) {
-
   .header-text {
     color: #fff;
     text-align: center;
     display: block;
     font-family: "Righteous", cursive;
-    font-size: 50px;
+    font-size: 70px;
     letter-spacing: 0.5rem;
   }
 
@@ -127,8 +133,25 @@ body {
     text-align: left;
     line-height: 1.3em;
   }
-  .content p::first-letter {
+  /*.content p::first-letter {
     font-size: 150%;
+  }*/
+
+  .divider-img {
+    position: absolute;
+    height: 200px;
+    left: calc(50vw - 100px);
+    top: calc(98vh - 150px);
+  }
+
+  .box2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
 
 }
