@@ -138,6 +138,10 @@ body {
   /*margin-top: 20vh;*/
 }
 
+.box2 p {
+  width: 60%
+}
+
 .divider-img {
   position: absolute;
   height: 200px;
@@ -240,6 +244,10 @@ span.gradient{
     height: auto;
     margin-top: 10vh;
     margin-bottom: 5vh;
+  }
+
+  .box2 p {
+    width: 100%
   }
 
   #skills {
