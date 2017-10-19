@@ -4,9 +4,8 @@
   text-align: center;
   display: block;
   font-family: "Righteous", cursive;
-  font-size: 4em;
+  font-size: 50px;
   letter-spacing: 0.5rem;
-
 }
 
 *, ::before, ::after {
@@ -35,15 +34,6 @@ body {
   overflow-x: visible;
 }
 
-.divider-img {
-  display: flex;
-  position: absolute;
-  display: flex;
-  height: 200px;
-  left: calc(50vw - 100px);
-  top: calc(100vh - 120px);
-}
-
 .box {
   display: flex;
   flex: 1;
@@ -59,6 +49,13 @@ body {
   align-items: center;
   height: 100vh;
   /*margin-top: 20vh;*/
+}
+
+.divider-img {
+  position: absolute;
+  height: 200px;
+  left: calc(50vw - 100px);
+  top: calc(98vh - 120px);
 }
 
 .colorful {
@@ -79,7 +76,7 @@ body {
   color: #444;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3em;
+  font-size: 22px;
 }
 
 .content p {
