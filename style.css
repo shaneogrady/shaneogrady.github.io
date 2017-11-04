@@ -6,7 +6,7 @@
   color: #fff;
   text-align: center;
   display: block;
-  font-family: "Rubik", cursive;
+  font-family: "Righteous", cursive;
   font-weight: 600;
   font-size: 80px;
   letter-spacing: 0.5rem;
@@ -22,6 +22,7 @@ body {
   color: white;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #000;
 }
 
 .header {
@@ -112,7 +113,7 @@ transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
         transform: translate3d(0, 0, 0);
 }
 .menu__brand {
-background: #fff;
+background: #000;
 -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 -webkit-transform: translate3d(0, 100%, 0);
@@ -227,6 +228,10 @@ background-size: 2000%;
 animation: gradientBackground 10s alternate ease-in-out;
 animation-iteration-count: infinite;
 border-radius: 50%;
+}
+
+.section {
+  background-color: #000;
 }
 
 h1, h2, h3, p {
@@ -380,14 +385,19 @@ body {
   height: 100vh;
 }
 
+.lo_image {
+  display: block;
+}
+
 .box2 {
+  background-color: #000;
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
-  height: auto;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+
+  padding-top: 50px;
+  margin-bottom:50px;
   /*margin-top: 20vh;*/
 }
 
@@ -411,20 +421,22 @@ body {
 }
 
 .content {
+  background-color: #000;
   position: relative;
   display: block;
   padding: 0 15%;
+
 }
 
 .content-text {
-  color: #444;
+  color: #fff;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   font-size: 22px;
 }
 
 .content p {
-  text-align: left;
+  text-align: center;
   line-height: 1.3em;
 }
 /*.content p::first-letter {
@@ -460,7 +472,7 @@ span.gradient{
     color: #fff;
     text-align: center;
     display: block;
-    font-family: "Rubik", cursive;
+    font-family: "Righteous", cursive;
     font-size: 70px;
     font-weight: 900;
     letter-spacing: 0.5rem;
@@ -469,14 +481,14 @@ span.gradient{
   .content-text {
     margin-top: 25px;
     margin-bottom: 25px;
-    color: #444;
+    color: #fff;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
   }
 
   .content p {
-    text-align: left;
+    text-align: center;
     line-height: 1.3em;
   }
   /*.content p::first-letter {
@@ -495,13 +507,14 @@ span.gradient{
     flex: 1;
     justify-content: center;
     align-items: center;
-    height: auto;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+
+    padding-top: 50px;
+    margin-bottom:50px;
+    background-color: #000;
   }
 
   .box2 p {
-    width: 100%
+    width: 100%;
   }
 
   #skills {
