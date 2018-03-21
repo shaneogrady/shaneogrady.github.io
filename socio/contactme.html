@@ -86,23 +86,28 @@
 								<img class="img-responsive" style="margin: 0 auto;" src="img/get_started_socio_staff.png" alt="sociolocal">
 							</figure>
 
-							<p class="section-lead text-center text-muted">We’s love to hear from you! Please fill in our client<br/> form and we will be intouch as soon<br/>as possible to talk through your business<br/>and what we can do to help.</p>
+							<p class="section-lead text-center text-muted">We love to hear from you! Please fill in our client<br/> form and we will be intouch as soon<br/>as possible to talk through your business<br/>and what we can do to help.</p>
 
 						</div>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<form class="contact row" id="contact-form" style="background-color:#fff; padding:25px; border-radius:20px; box-shadow: 0px 5px 5px 0px #dc612a;">
+
+
+						<form class="contact row" id="contact-form" style="background-color:#fff; padding:25px; border-radius:20px; -webkit-box-shadow: -1px 3px 15px -2px rgba(242,124,60,0.23);
+-moz-box-shadow: -1px 3px 15px -2px rgba(242,124,60,0.23);
+box-shadow: -1px 3px 15px -2px rgba(242,124,60,0.23);" action="contact.php" method="post"
+name="contactform" onSubmit='javascript:document.charset="UTF-8"; return checkMandatery();' accept-charset='UTF-8'>
 
 							<div class="form-group col-md-12">
 
 								<div class="form-group col-md-6 ">
 									<p>Full name*</p>
-									<input type="text" class="form-control" name="name" required="">
+									<input type="text" class="form-control" name="fname" id="fname" required="">
 								</div>
 
 								<div class="form-group col-md-6 ">
 									<p>Position</p>
-									<input type="text" class="form-control" name="position" required="">
+									<input type="text" class="form-control" name="position" id="organisation" required="">
 								</div>
 
 							</div>
@@ -111,43 +116,113 @@
 
 								<div class="form-group col-md-6 ">
 									<p>Email*</p>
-									<input type="text" class="form-control" name="email" required="">
+									<input type="text" class="form-control" name="email" id="email" required="">
 								</div>
 
 								<div class="form-group col-md-6 ">
 									<p>Phone*</p>
-									<input type="text" class="form-control" name="phone" required="">
+									<input type="text" class="form-control" name="phone" id="phone" required="">
 								</div>
 
 							</div>
 
 							<div class="form-group col-md-12" style="padding-left:25px;">
 								<p>Restaurant name*</p>
-								<input type="text" class="form-control" name="subject" required="">
+								<input type="text" class="form-control" name="message" id="message" required="">
 							</div>
 
 							<div class="form-group col-md-12" style="left:20px;">
 								<p>Number of locations*</p>
 								<label class="checkbox-inline" style="margin-right:10px;">
-									<input type="radio" value="1" style="margin-right:10px;">1</label>
+									<input type="radio" value="1" name="locations" id="locations" style="margin-right:10px;">1</label>
 								<label class="checkbox-inline" style="margin-right:10px;">
-									<input type="radio" value="1" style="margin-right:10px;">2</label>
+									<input type="radio" value="2" name="locations" id="locations" style="margin-right:10px;">2</label>
 								<label class="checkbox-inline" style="margin-right:10px;">
-									<input type="radio" value="1" style="margin-right:10px;">3</label>
+									<input type="radio" value="3" name="locations" id="locations" style="margin-right:10px;">3</label>
 								<label class="checkbox-inline" style="margin-right:10px;">
-									<input type="radio" value="1" style="margin-right:10px;">4</label>
+									<input type="radio" value="4" name="locations" id="locations" style="margin-right:10px;">4</label>
 								<label class="checkbox-inline" style="margin-right:10px;">
-									<input type="radio" value="1" style="margin-right:10px;">5+</label>
+									<input type="radio" value="5+" name="locations" id="locations" style="margin-right:10px;">5+</label>
 							</div>
 							<!-- <div class="form-group col-12">
 								<textarea class="form-control" placeholder="Message" name="message" required=""></textarea>
 							</div> -->
 							<div class="form-group col-md-12">
-								<button class="btn" style="width:100%">
-										Send
-								</button>
+
+								<input type="submit" id="submit" value="Send" class="btn" style="width:100%">
 							</div>
 						</form>
+
+					<script>
+			var mndFileds = new Array('fname', 'organisation', 'email', 'phone', 'message');
+			var fldLangVal = new Array('fname', 'organisation', 'email', 'phone', 'message');
+
+			function reloadImg() {
+				if (document.getElementById('imgid').src.indexOf('&d') !== -1) {
+					document.getElementById('imgid').src = document.getElementById('imgid').src.substring(0, document.getElementById('imgid').src.indexOf('&d')) + '&d' + new Date().getTime();
+				} else {
+					document.getElementById('imgid').src = document.getElementById('imgid').src + '&d' + new Date().getTime();
+				}
+			}
+
+			function checkMandatery() {
+				var name = '';
+				var email = '';
+				for (i = 0; i < mndFileds.length; i++) {
+					var fieldObj = document.forms['WebToLeads1271194000000291071'][mndFileds[i]];
+					if (fieldObj) {
+						if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+							alert(fldLangVal[i] + ' cannot be empty');
+							fieldObj.focus();
+							return false;
+						} else if (fieldObj.nodeName == 'SELECT') {
+							if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+								alert(fldLangVal[i] + ' cannot be none');
+								fieldObj.focus();
+								return false;
+							}
+						} else if (fieldObj.type == 'checkbox') {
+							if (fieldObj.checked == false) {
+								alert('Please accept  ' + fldLangVal[i]);
+								fieldObj.focus();
+								return false;
+							}
+						}
+						try {
+							if (fieldObj.name == 'name') {
+								name = fieldObj.value;
+							}
+						} catch (e) {}
+					}
+				}
+				try {
+					if ($zoho) {
+						var firstnameObj = document.forms['WebToLeads1271194000000291071']['name'];
+						if (firstnameObj) {
+							name = firstnameObj.value + ' ' + name;
+						}
+						$zoho.salesiq.visitor.name(name);
+						var emailObj = document.forms['WebToLeads1271194000000291071']['email'];
+						if (emailObj) {
+							email = emailObj.value;
+							$zoho.salesiq.visitor.email(email);
+						}
+					}
+				} catch (e) {}
+			}
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
 					</div>
 
 				</div>
