@@ -1,3 +1,5 @@
+
+
 $(function() {
 	let loading = {
 		show: function() {
