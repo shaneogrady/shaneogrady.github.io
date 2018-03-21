@@ -452,14 +452,14 @@ html, body {
 }
 
 .hero_how {
-  background-image: url("file:///C:/Users/ShaneO/Desktop/sociolocal-site-master/img/work/shutterstock_373559485.jpg");
+  background-image: url("https://shaneogrady.github.io/socio/img/work/shutterstock_373559485.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:top;
 }
 
 .hero_home {
-  background: url("file:///C:/Users/ShaneO/Desktop/sociolocal-site-master/img/home/home_header.jpg");
+  background: url("https://shaneogrady.github.io/socio/img/home/home_header.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:top;
