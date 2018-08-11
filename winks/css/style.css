@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 /* Body 
 ------------------------------------- */
 body {
     background: #ffffff;   
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     position: relative;
