@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  color: #e44c65;
+  color: #c495a1;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 4px;
@@ -57,7 +57,7 @@ p {
 
 #home p,
 #contact p, footer p {
-  color: #000000;
+  color: #f9f9f9;
 }
 
 .btn {
@@ -67,12 +67,12 @@ p {
 }
 
 .btn:focus {
-  background: #e44c65;
+  background: #c495a1;
   border-color: transparent;
 }
 
 .btn-success {
-  background: #e44c65;
+  background: #c495a1;
   font-weight: 300;
   letter-spacing: 2px;
   padding: 14px 32px;
@@ -84,14 +84,14 @@ p {
 }
 
 a {
-  color: #e44c65;
+  color: #c495a1;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #e44c65;
+  color: #c495a1;
   outline: none;
 }
 
@@ -174,7 +174,7 @@ a:hover, a:active, a:focus {
 .sk-spinner-pulse {
   width: 60px;
   height: 60px;
-  background-color: #e44c65;
+  background-color: #c495a1;
   border-radius: 100%;
   margin: 40px auto;
   -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
@@ -340,7 +340,7 @@ a:hover, a:active, a:focus {
 }
 
 #home strong {
-  color: #009900;
+  color: #c495a1;
 }
 
 #home .col-md-6 {
@@ -350,7 +350,7 @@ a:hover, a:active, a:focus {
 }
 
 #home .home-img {
-  background: url('../images/winks.jpg') no-repeat;
+  background: url('../images/logo.jpg') no-repeat;
   background-size: cover;
   background-position: 50% 20%;
   width: 100%;
@@ -521,7 +521,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact .form-control:focus {
-  border-color: #e44c65;
+  border-color: #c495a1;
   color: #ffffff;
 }
 
@@ -530,7 +530,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact input[type="submit"] {
-  background: #e44c65;
+  background: #c495a1;
   border:none;
   color: #ffffff;
   font-weight: 400;
@@ -583,7 +583,7 @@ footer {
 
 .social-icon li a:hover {
   background: #ffffff;
-  color: #e44c65;
+  color: #c495a1;
 }
 
 
@@ -611,7 +611,7 @@ footer {
 }
 
 .go-top:hover {
-  background: #e44c65;
+  background: #c495a1;
   color: #ffffff;
 }
 
