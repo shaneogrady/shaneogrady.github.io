@@ -621,14 +621,14 @@ a.hover-reverse:hover, a.hover-reverse:focus, a.hover-reverse:active {
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  background: #ffc90f;
+  background: #000000;
   color: #ffffff;
-  border: 2px solid #ffc90f;
+  border: 2px solid #000000;
 }
 
 .btn.btn-primary:focus, .btn.btn-primary:active {
   outline: none;
-  border: 2px solid #ffc90f;
+  border: 2px solid #000000;
 }
 
 .btn.btn-ghost {
