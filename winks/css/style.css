@@ -423,7 +423,7 @@ footer {
 #about .about-img img {
 	border: 8px solid #ffffff;
 	position: absolute;
-	left: -120px;
+	left: -60px;
 	bottom: -325px;
 	padding: 12px;
 }
@@ -542,6 +542,17 @@ footer {
   https: //media2.giphy.com/media/WnIDDQcuGqoJXUhgDz/giphy.gif?cid=790b76115d0a9c19484f507236acf38d&rid=giphy.gif 
   https: //media0.giphy.com/media/MRFTJZfjBtfEpTGFJe/giphy.gif?cid=790b76115d0a9b7137776476738f6a88&rid=giphy.gif */
 	background: url('https://media2.giphy.com/media/WnIDDQcuGqoJXUhgDz/giphy.gif?cid=790b76115d0a9c19484f507236acf38d&rid=giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: 50% 45%;
+	width: 100%;
+	height: 100vh;
+}
+
+#contact .contact-img-two {
+	/* potential background for contact section
+  https: //media2.giphy.com/media/WnIDDQcuGqoJXUhgDz/giphy.gif?cid=790b76115d0a9c19484f507236acf38d&rid=giphy.gif 
+  https: //media0.giphy.com/media/MRFTJZfjBtfEpTGFJe/giphy.gif?cid=790b76115d0a9b7137776476738f6a88&rid=giphy.gif */
+	background: url('https://media0.giphy.com/media/MRFTJZfjBtfEpTGFJe/giphy.gif?cid=790b76115d0a9b7137776476738f6a88&rid=giphy.gif') no-repeat;
 	background-size: cover;
 	background-position: 50% 45%;
 	width: 100%;
@@ -710,6 +721,12 @@ footer {
 	#gallery {
 		padding-top: 80px;
 		padding-bottom: 80px;
+	}
+
+	#home .home-img {
+		background-position: 50% 45%;
+		width: 100%;
+		height: 60vh;
 	}
 
 }
